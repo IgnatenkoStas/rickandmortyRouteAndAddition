@@ -1,0 +1,32 @@
+<div class="buttons-container">
+  <input
+    [class.active]="isEpisodes"
+    class="navigation-button" (click)="switchToEpisodes()" type="button" value="Episodes" id="Episodes">
+  <input
+    [class.active]="isLocations"
+    class="navigation-button" (click)="switchToLocations()" type="button" value="Locations" id="Locations">
+  <input class="navigation-button" (click)="ClickAddition()" type="button" value="Addition" id="Addition">
+</div>
+
+<ng-container *ngIf="isEpisodes then episodes else locations"></ng-container>
+
+<div class="main-container">
+  <div class="characters-chapter-container">
+    <h1 class="chapter">Characters</h1>
+    <div class="characters-container">
+      <app-character-item [characterIitem]="item" *ngFor="let item of charactersResult" (select)='selectCharacter($event)'></app-character-item>
+    </div>
+  </div>
+</div>
+
+<ng-template #episodes>
+  <div class="episodes-locations-container" *ngIf="(episodesResult | async) as episodeRes">
+    <app-episode-item [episodeItem]="item" *ngFor="let item of episodeRes" (select)='selectEpisodeItem($event)'></app-episode-item>
+  </div>
+</ng-template>
+
+<ng-template #locations>
+  <div class="episodes-locations-container" *ngIf="(locationsResult | async) as locationRes">
+    <app-location-item [locationItem]="item" *ngFor="let item of locationRes" (select)='selectLocationItem($event)'></app-location-item>
+  </div>
+</ng-template>

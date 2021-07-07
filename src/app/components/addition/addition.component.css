@@ -1,0 +1,67 @@
+h2 {
+  text-align: center;
+}
+
+.container {
+  width: 30%;
+  height: 562px;
+  margin: 25px auto;
+  margin-top: 0;
+  border: 1px solid black;
+
+  background-color: antiquewhite;
+}
+
+.input-images {
+  width: 90%;
+  height: 250px;
+  margin: 20px;
+  margin-bottom: 10px;
+
+  border: 2px dashed black;
+  background-color: white;
+}
+
+.fields-container {
+  border: 1px solid black;
+
+  height: 165px;
+  margin: 5px 20px;
+}
+
+label {
+  float: left;
+}
+
+form > input {
+  float: right;
+  height: 15px
+}
+
+label, form > input {
+
+  margin: 10px 5px;
+}
+
+button {
+  height: 40px;
+  width: 97%;
+
+  margin: 5px 5px;
+
+  background-color: white;
+  font-size: larger;
+}
+
+button:hover {
+  background-color: rosybrown;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  height: 210px;
+
+  margin: 11px auto;
+}

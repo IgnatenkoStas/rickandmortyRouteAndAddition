@@ -1,0 +1,30 @@
+/* .item {
+  border: 1px solid black;
+  margin: 10px 50px;
+  padding-left: 10px;
+  max-width: 90%;
+  background-color: white;
+}
+
+hr {
+  margin-right: 10px;
+} */
+
+input {
+  width: 180px;
+  height: 30px;
+
+  border-radius: 5px;
+ color:rgb(102, 16, 102);
+ background-color: thistle;
+ font-size: small;
+ font-weight: bold;
+
+ /* margin-right: 5px; */
+ margin-bottom: 5px;
+}
+
+input:hover {
+  color:thistle;
+ background-color: rgb(102, 16, 102);
+}

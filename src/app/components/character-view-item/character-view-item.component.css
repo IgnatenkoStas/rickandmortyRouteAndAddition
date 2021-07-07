@@ -1,0 +1,29 @@
+.item {
+  border: 1px solid black;
+  padding-left: 10px;
+  background-color: white;
+  width: 235px;
+}
+
+hr {
+  margin-right: 10px;
+}
+
+img {
+  height: 200px;
+  width: 220px;
+}
+
+input {
+  margin-top: 20px;
+
+  width: 250px;
+  height: 50px;
+
+  font-size: 30px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 250px;
+}

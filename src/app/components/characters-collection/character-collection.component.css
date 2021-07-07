@@ -1,0 +1,71 @@
+.active {
+  color:thistle;
+  background-color: rgb(102, 16, 102);
+}
+
+.characters-chapter-container {
+  overflow: scroll;
+  overflow-x:unset;
+  height: 450px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: thistle;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chapter {
+  margin: 5px 50px;
+}
+
+.selectedItem {
+  margin-top: 50px;
+  margin-left: 40%;
+  /* color: blue; */
+}
+
+
+.buttons-container {
+  margin: 20px auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-button {
+  font-size: small;
+  font-weight: bold;
+
+  height: 50px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.navigation-button:hover {
+  background-color: thistle;
+  color: rgb(102, 16, 102);
+}
+
+.characters-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px;
+  margin-bottom: 0;
+  /* max-width: 90%; */
+}
+
+.episodes-locations-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.episodes-locations-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

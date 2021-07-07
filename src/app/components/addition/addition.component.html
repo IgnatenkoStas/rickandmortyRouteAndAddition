@@ -1,0 +1,34 @@
+<h2>Addition</h2>
+<div class="container">
+
+  <ng-container *ngIf="imageUrl === '' then input else image"></ng-container>
+
+  <div class="fields-container">
+    <form>
+      <label for="new-name">Please, write new name: </label>
+      <input type="text" name="new-name" id="new-name" [(ngModel)]="newName"><br>
+
+      <label for="new-status">Please, write new status: </label>
+      <input type="text" name="new-status" id="new-status" [(ngModel)]="newStatus"><br>
+
+      <label for="new-gender">Please, write new gender: </label>
+      <input type="text" name="new-gender" id="new-gender" [(ngModel)]="newGender"><br>
+
+      <label for="new-species">Please, write new species: </label>
+      <input type="text" name="new-species" id="new-species" [(ngModel)]="newSpecies">
+    </form>
+  </div>
+
+  <button class="btn button" (click)='createNewCharacter()'>Create</button>
+  <button class="btn button" (click)='returnBack()'>Back</button>
+</div>
+
+
+<ng-template #input>
+  <input #fileInput class='input-images' type="file" id='picture' name='picture' accept="image.png, image.jpg, image.jpeg" (change)="selectImage(fileInput.files[0])">
+</ng-template>
+
+<ng-template #image>
+  <img [src]="imageUrl" alt="selectedImg">
+  <button (click)="switchToInputFromImage()">Change image</button>
+</ng-template>

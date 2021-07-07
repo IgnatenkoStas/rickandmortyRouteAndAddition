@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div class="item" *ngIf="characterIitem">
+    <img [src]="characterIitem.image" alt="">
+    <h1>{{characterIitem.name}}</h1>
+    <hr>
+    <p>Status: {{characterIitem.status}}</p>
+    <p>Gender: {{characterIitem.gender}}</p>
+    <p>Species: {{characterIitem.species}}</p>
+  </div>
+
+<input (click)='returnBack()' type="button" name="" id="" value="Back">
+</div>
